@@ -444,6 +444,7 @@
 @media screen and (max-width: 567px) {
   .contact {
     justify-content: center;
+    padding: 5rem 0;
   }
 
   .contact-row {
