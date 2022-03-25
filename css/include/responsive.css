@@ -403,6 +403,7 @@
 
 @media screen and (max-width: 1270px) {
   .contact {
+    height: 100%;
     flex-direction: column;
     padding: 5rem 0;
   }
