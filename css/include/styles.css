@@ -82,7 +82,7 @@
 }
 
 .nav__toggle.active span:nth-child(1) {
-  width: 0%;
+  display: none;
 }
 
 .nav__toggle.active span:nth-child(2) {
@@ -98,7 +98,7 @@
 }
 
 .nav__toggle.active span:nth-child(4) {
-  width: 0%;
+  display: none;
 }
 
 /* HOME */
@@ -296,13 +296,18 @@
 }
 
 .skills-text-about,
-.date-experience-list,
 .text-experience-list {
   font-family: var(--text-font);
   font-size: var(--text-font-size);
   color: var(--background-color);
   font-weight: 700;
   line-height: 19px;
+}
+
+.date-experience-list {
+  font-family: var(--text-font);
+  font-size: var(--sub-text-font-size);
+  color: var(--background-color);
 }
 
 .text-experience-list {

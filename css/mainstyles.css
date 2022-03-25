@@ -22,6 +22,7 @@
   --middle-font-size: 20px;
   --sec-middle-font-size: 18px;
   --text-font-size: 14px;
+  --sub-text-font-size: 12px;
 }
 
 @media screen and (max-width: 768px) {
@@ -31,6 +32,7 @@
     --middle-font-size: 18px;
     --sec-middle-font-size: 14px;
     --text-font-size: 12px;
+    --sub-text-font-size: 11px;
   }
 }
 
@@ -41,6 +43,7 @@
     --middle-font-size: 16px;
     --sec-middle-font-size: 14px;
     --text-font-size: 11px;
+    --sub-text-font-size: 10px;
   }
 }
 
@@ -51,6 +54,7 @@
     --middle-font-size: 14px;
     --sec-middle-font-size: 12px;
     --text-font-size: 11px;
+    --sub-text-font-size: 10px;
   }
 }
 
