@@ -1,326 +1,508 @@
+<!-- /*
+* Template Name: Minimal
+* Template Author: Untree.co
+* Author URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Untree.co" />
 
-    <!-- ==========     CSS LINK     ========== -->
-    <link rel="stylesheet" href="./css/mainstyles.css" />
-    <link rel="stylesheet" href="./css/include/styles.css" />
-    <link rel="stylesheet" href="./css/include/responsive.css" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-    <!-- ==========     FONTS     ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Mono&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Portfolio</title>
   </head>
-  <body>
-    <!-- ==========     HEADER AREA     ========== -->
-    <header class="header" id="header">
-      <nav class="nav">
-        <a href="#" class="nav__logo">sabrinaskaa</a>
-        <div class="nav__toggle" id="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
+    <div class="lines-wrap">
+      <div class="lines-inner">
+        <div class="lines"></div>
+      </div>
+    </div>
+    <!-- END lines -->
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
         </div>
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list" id="nav-list">
-            <li class="nav__item" id="nav-home">
-              <a href="#home" id="link-home" class="nav__link active-link"
-                >home</a
-              >
-            </li>
-            <li class="nav__item" id="nav-about">
-              <a href="#about" id="link-about" class="nav__link">about</a>
-            </li>
-            <li class="nav__item" id="nav-project">
-              <a href="#project" id="link-project" class="nav__link">project</a>
-            </li>
-            <li class="nav__item" id="nav-contact">
-              <a href="#contact" id="link-contact" class="nav__link">contact</a>
-            </li>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <nav class="site-nav dark mb-5 site-navbar-target">
+      <div class="container">
+        <div class="site-navigation">
+          <a href="index.html" class="logo m-0"
+            >sabrinaskaa<span class="text-primary">.</span></a
+          >
+
+          <ul
+            class="js-clone-nav d-none d-lg-inline-none site-menu float-right site-nav-wrap"
+          >
+            <li><a href="#home-section" class="nav-link active">Home</a></li>
+            <li><a href="#skill-section" class="nav-link">Skill</a></li>
+            <li><a href="#project-section" class="nav-link">Project</a></li>
+            <li><a href="#contact-section" class="nav-link">Contact us</a></li>
           </ul>
-        </div>
-      </nav>
-    </header>
 
-    <!-- ==========     MAIN AREA     ========== -->
-    <main class="main">
-      <!-- ==========     HOME AREA     ========== -->
-      <section class="home container" id="home">
-        <div class="home-row">
-          <div class="underline">
-            <span class="home-title">Hi,</span>
-          </div>
-          <div class="underline">
-            <span class="home-title">I'm Aska</span>
-          </div>
-          <span class="home-text">Front-end Engineer</span>
-          <a href="./assets/CV/CV_Sabrina Aska Amalina_PKL_SMK7.pdf" download>
-            <button class="home-button">Download CV</button></a
+          <a
+            href="#"
+            class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-inline-block"
+            data-toggle="collapse"
+            data-target="#main-navbar"
           >
+            <span></span>
+          </a>
         </div>
-        <div class="home-row">
-          <img class="home-img" src="./assets/img.jpg" alt="" />
-        </div>
-      </section>
+      </div>
+    </nav>
 
-      <!-- ==========     ABOUT AREA     ========== -->
-      <section class="about container" id="about">
-        <div class="about-row abt-row-one">
-          <span class="title-about">Sabrina Aska Amalina</span>
-          <div class="line-about"></div>
-          <div class="profile-wrapper-about">
-            <span class="profile-title-about">ABOUT ME</span>
-            <span class="profile-text-about"
-              >I am a student from 7th Vocational High School Semarang. I take
-              majoring in Information Systems, Networks, and Applications
-              (SIJA). I have an interest in website creation. I started learning
-              websites in 2020 by taking courses.</span
-            >
+    <div class="untree_co-section pb-0 home" id="home-section">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-7">
+            <h1 class="heading gsap-reveal-hero mb-3">
+              <strong>Hi<span class="text-primary">!</span> Aska's here</strong>
+            </h1>
+            <h2 class="subheading gsap-reveal-hero mb-4">
+              I am a student at Dian Nuswantoro University, majoring in
+              Informatics Engineering. I am interested in application
+              development. Let's catch up!
+            </h2>
+            <p class="gsap-reveal-hero">
+              <a href="#project-section" class="btn btn-outline-black"
+                >See my projects.</a
+              >
+            </p>
           </div>
         </div>
-        <div class="about-row abt-row-scd">
-          <div class="skills-wrapper-about">
-            <div class="wrapper-row-about">
-              <span class="skills-title-about">SKILLS</span>
-            </div>
-            <div class="wrapper-row-about-text">
-              <div class="list-wrapper-about">
-                <div class="dot-list-about"></div>
-                <span class="skills-text-about">HTML / CSS</span>
-              </div>
+      </div>
+      <div class="mouse gsap-reveal-hero">
+        <img src="./mouse.png" alt="mouse" />
+        <span class="scroll-text">Scroll down</span>
+      </div>
+    </div>
 
-              <div class="list-wrapper-about">
-                <div class="dot-list-about"></div>
-                <span class="skills-text-about">Javascript</span>
-              </div>
-
-              <div class="list-wrapper-about">
-                <div class="dot-list-about"></div>
-                <span class="skills-text-about">React JS, Next JS</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="experience-wrapper-about">
-            <div class="wrapper-row-about">
-              <span class="experience-title-about">EXPERIENCE</span>
-            </div>
-            <div class="wrapper-row-about-text">
-              <span class="title-experience-list">
-                KKSI Smart Apps for School
-              </span>
-              <span class="date-experience-list">2020 - 2020</span>
-              <span class="text-experience-list"
-                >Making web app design interface.</span
-              >
-              <span class="title-experience-list">
-                Making e-vote for Student Council Vote
-              </span>
-              <span class="date-experience-list">2021 - 2021</span>
-              <span class="text-experience-list"
-                >Participate in creating the e-vote website interface.</span
-              >
-              <span class="title-experience-list">
-                HIEDESCOM Web Design Competition
-              </span>
-              <span class="date-experience-list">2021 - 2021</span>
-              <span class="text-experience-list"
-                >Became a finalist of the HIEDESCOM competition.</span
-              >
-              <span class="title-experience-list">Cyber Security Training</span>
-              <span class="date-experience-list">2021 - 2021</span>
-              <span class="text-experience-list"
-                >Became a participant of Cyber Security training</span
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ==========     PROJECT AREA     ========== -->
-      <section class="project container" id="project">
-        <div class="row-project">
-          <div class="underline">
-            <span class="title-project">My Project</span>
-          </div>
-          <span class="text-project"
-            >A small gallery of my projects created by me. I've done them all
-            together with amazing tim and talented people. Hope you like and
-            enjoy to see my project.
-          </span>
-        </div>
-        <div class="row-project">
-          <div class="gallery-project-list">
-            <div class="wrapper-project">
-              <div class="img-list-project">
-                <img src="./assets/markup-1.png" alt="" class="img-project" />
-                <a
-                  href="https://github.com/sabrinaskaa/Indonesian-Culture"
-                  class="link-github-project"
-                  target="_blank"
-                >
-                  <div class="view-project">VIEW PROJECT</div></a
-                >
-              </div>
-              <div class="img-list-project">
-                <img src="./assets/markup-2.png" alt="" class="img-project" />
-                <a
-                  href="https://github.com/sabrinaskaa/web-pemilos"
-                  class="link-github-project"
-                  target="_blank"
-                >
-                  <div class="view-project">VIEW PROJECT</div></a
-                >
-              </div>
-            </div>
-            <div class="wrapper-project">
-              <div class="img-list-project">
-                <img src="./assets/markup-3.png" alt="" class="img-project" />
-                <a
-                  href="https://github.com/sabrinaskaa/final-lomba"
-                  class="link-github-project"
-                  target="_blank"
-                >
-                  <div class="view-project">VIEW PROJECT</div></a
-                >
-              </div>
-              <div class="img-list-project">
-                <img src="./assets/markup-4.png" alt="" class="img-project" />
-                <a
-                  href="https://github.com/sabrinaskaa/wedding-web"
-                  class="link-github-project"
-                  target="_blank"
-                >
-                  <div class="view-project">VIEW PROJECT</div></a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ==========     CONTACT AREA     ========== -->
-      <section class="contact container" id="contact">
-        <div class="contact-row contact-row-one">
-          <span class="title-contact">Let's talk</span>
-          <span class="text-contact"
-            >Ask anything about me or just say hi...</span
-          >
-
-          <div class="list-contact-medsos">
-            <div class="instagram">
-              <a
-                href="https://www.instagram.com/sabrinaskaa"
-                class="instagram-link"
-                target="_blank"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="bi bi-instagram"
-                  viewBox="0 0 18 18"
-                >
-                  <path
-                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-                  />
-                </svg>
-
-                <span class="text-instagram-id">sabrinaskaa</span>
-              </a>
-            </div>
-
-            <div class="linkedIn">
-              <a
-                href="https://www.linkedin.com/in/sabrinaskaa"
-                class="linkedIn-link"
-                target="_blank"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="bi bi-linkedin"
-                  viewBox="0 0 18 18"
-                >
-                  <path
-                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                  />
-                </svg>
-                <span class="text-linkedIn-id"
-                  >https://www.linkedin.com/in/sabrinaskaa</span
-                >
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-row contact-row-scd">
-          <form class="form-contact" action="mailto:askach44@gmail.com">
-            <div class="list-form">
-              <div class="content-list-form left">
-                <label class="label" for="name">Name</label>
-                <input
-                  class="input"
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Victoria Doe"
-                  required
-                />
-              </div>
-              <div class="content-list-form right">
-                <label class="label" for="email">Email</label>
-                <input
-                  class="input"
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="example@yourdomain.com"
-                  required
-                />
-              </div>
-            </div>
-
-            <div class="list-form">
-              <div class="content-list-message">
-                <label class="label" for="subject">Message</label>
-                <textarea
-                  class="message-area"
-                  id="subject"
-                  name="subject"
-                  placeholder="Hello..."
-                  style="height: 200px"
-                  required
-                ></textarea>
-              </div>
-            </div>
-
-            <div class="wrapper-btn">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="bi bi-send-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"
-                />
+    <div class="untree_co-section pb-0" id="skill-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0">
+              <strong>My Skillset</strong>
+            </h2>
+            <p class="gsap-reveal-hero">
+              Experienced in project management and dedicated to continuous
+              learning and professional growth.
+            </p>
+            <div class="wave gsap-reveal-hero">
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
               </svg>
-              <input class="submit-btn" type="submit" value="SEND" />
             </div>
-          </form>
+          </div>
         </div>
-      </section>
-      <script src="./js/scrollreveal.min.js"></script>
-    </main>
+        <div class="row">
+          <div
+            class="col-6 col-sm-6 col-md-6 col-lg-3 text-center"
+            data-aos="fade-up"
+            data-aos-delay="0"
+          >
+            <div class="progressbar" data-animate="false">
+              <p class="caption"><b>Languages</b></p>
+              <p class="caption">HTML/CSS</p>
+              <p class="caption">Javascript</p>
+              <p class="caption">Typescript</p>
+              <p class="caption">PHP</p>
+              <p class="caption">Go</p>
+            </div>
+          </div>
+          <div
+            class="col-6 col-sm-6 col-md-6 col-lg-3 text-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="progressbar" data-animate="false">
+              <p class="caption"><b>Database Service</b></p>
+              <p class="caption">MySQL</p>
+              <p class="caption">MongoDB</p>
+            </div>
+          </div>
+          <div
+            class="col-6 col-sm-6 col-md-6 col-lg-3 text-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="progressbar" data-animate="false">
+              <p class="caption"><b>Tools</b></p>
+              <p class="caption">Visual Studio Code</p>
+              <p class="caption">Notion</p>
+              <p class="caption">Gitlab</p>
+              <p class="caption">Github</p>
+            </div>
+          </div>
+          <div
+            class="col-6 col-sm-6 col-md-6 col-lg-3 text-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="progressbar" data-animate="false">
+              <p class="caption"><b>Web Framework</b></p>
+              <p class="caption">React.js</p>
+              <p class="caption">Next.js</p>
+              <p class="caption">Vue.js</p>
+              <p class="caption">Node.js</p>
+              <p class="caption">Laravel</p>
+              <p class="caption">Tailwind</p>
+              <p class="caption">Bootstrap</p>
+              <p class="caption">Gin</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <script src="./js/script.js"></script>
+    <div class="untree_co-section" id="project-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0">
+              <strong>Projects</strong>
+            </h2>
+            <p class="gsap-reveal-hero">
+              A small gallery of my projects created by me.
+            </p>
+
+            <div class="wave gsap-reveal-hero">
+              <svg>
+                <path
+                  d="M10,10 L50,100 L90,50"
+                  stroke="#0389ff"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-6 col-sm-6 col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="0"
+          >
+            <div class="post-entry">
+              <a
+                href="https://disposisi.azuralabs.id/login"
+                target="_blank"
+                class="thumb"
+                ><img src="images/disposisi.png" alt="image" class="img-fluid"
+              /></a>
+              <h3>
+                <a href="https://disposisi.azuralabs.id/login" target="_blank"
+                  >RSISA Disposisi Online</a
+                >
+              </h3>
+              <div class="post-meta">
+                <a href="https://disposisi.azuralabs.id/login" target="_blank"
+                  >Lihat Website</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-sm-6 col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="post-entry">
+              <a href="https://simrsrsigm.unissula.ac.id/" class="thumb"
+                ><img src="images/rsigm.png" alt="image" class="img-fluid"
+              /></a>
+              <h3><a href="https://simrsrsigm.unissula.ac.id/">RSIGM</a></h3>
+              <div class="post-meta">
+                <a href="https://simrsrsigm.unissula.ac.id/">Lihat Website</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-sm-6 col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="post-entry">
+              <a href="https://alkindionlinepreschool.com/" class="thumb"
+                ><img
+                  src="images/alkindionlinepreschool.png"
+                  alt="image"
+                  class="img-fluid"
+              /></a>
+              <h3>
+                <a href="https://alkindionlinepreschool.com/">Alkindikids</a>
+              </h3>
+              <div class="post-meta">
+                <a href="https://alkindionlinepreschool.com/">Lihat Website</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-sm-6 col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="post-entry">
+              <a href="https://github.com/sabrinaskaa/web-pemilos" class="thumb"
+                ><img src="images/pemilos.png" alt="image" class="img-fluid"
+              /></a>
+              <h3>
+                <a href="https://github.com/sabrinaskaa/web-pemilos"
+                  >Pemilihan Ketua Osis</a
+                >
+              </h3>
+              <div class="post-meta">
+                <a href="https://github.com/sabrinaskaa/web-pemilos"
+                  >Lihat Repository</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-6 col-sm-6 col-md-6 col-lg-3 mt-5"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="post-entry">
+              <a
+                href="https://github.com/sabrinaskaa/Indonesian-Culture"
+                class="thumb"
+                ><img src="images/hiedescom1.png" alt="image" class="img-fluid"
+              /></a>
+              <h3>
+                <a href="https://github.com/sabrinaskaa/Indonesian-Culture"
+                  >Hiedescm</a
+                >
+              </h3>
+              <div class="post-meta">
+                <a href="https://github.com/sabrinaskaa/Indonesian-Culture"
+                  >Lihat Repository</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-6 col-sm-6 col-md-6 col-lg-3 mt-5"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="post-entry">
+              <a href="https://github.com/sabrinaskaa/final-lomba" class="thumb"
+                ><img src="images/hiedescom2.png" alt="image" class="img-fluid"
+              /></a>
+              <h3>
+                <a href="https://github.com/sabrinaskaa/final-lomba"
+                  >Hiedescm</a
+                >
+              </h3>
+              <div class="post-meta">
+                <a href="https://github.com/sabrinaskaa/final-lomba"
+                  >Lihat Repository</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="untree_co-section" id="contact-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0">
+              <strong>Contact</strong>
+            </h2>
+            <p class="gsap-reveal-hero">Let's get in touch</p>
+
+            <div class="wave gsap-reveal-hero">
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <form action="#">
+              <div class="row">
+                <div class="col-lg-6 form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Firstname"
+                  />
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Lastname"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email address"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 form-group">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="7"
+                    class="form-control"
+                    placeholder="Write your message..."
+                  ></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 form-group">
+                  <input
+                    type="submit"
+                    class="btn btn-black"
+                    value="Send Message"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <div id="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.1024369053293!2d110.44159839999999!3d-6.9972164999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708c9639be08b9%3A0x70da34ce7dc1ddd3!2sJl.%20Kelinci%20Raya%2C%20Pandean%20Lamper%2C%20Kec.%20Gayamsari%2C%20Kota%20Semarang%2C%20Jawa%20Tengah%2050249!5e0!3m2!1sid!2sid!4v1697707729759!5m2!1sid!2sid"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="widget">
+              <h3>Connect</h3>
+              <ul class="list-unstyled social">
+                <li>
+                  <a
+                    href="https://www.instagram.com/sabrinamlna/"
+                    target="_blank"
+                    ><span class="icon-instagram"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/sabrinaskaa" target="_blank"
+                    ><span class="icon-twitter"></span
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/sabrinaskaa/"
+                    target="_blank"
+                    ><span class="icon-linkedin"></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-3 -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <!-- 
+              **==========
+              NOTE: 
+              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
+
+              **==========
+            -->
+            <p class="mb-0">
+              Made by Aska
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.site-footer -->
+
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/wave-animate.js"></script>
+    <script src="js/circle-progress.js"></script>
+    <script src="js/imagesloaded.pkgd.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/scrollmagic.animation.gsap.min.js"></script>
+
+    <script src="js/custom.js"></script>
   </body>
 </html>
